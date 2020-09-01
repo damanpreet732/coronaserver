@@ -25,6 +25,14 @@ app.get('/feedbacks',(req,res)=>{
     res.sendFile(__dirname+"/coronatracker/feedbacks.html");
 })
 
+app.get('/covid-19',(req,res)=>{
+    res.sendFile(__dirname+"/coronatracker/covid-19.html");
+})
+
+app.get('/aboutus',(req,res)=>{
+    res.sendFile(__dirname+"/coronatracker/aboutus.html");
+})
+
 app.listen(port,(err)=>{
     if(err) throw err ;
     console.log("Server Started")
