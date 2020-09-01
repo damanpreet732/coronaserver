@@ -1,7 +1,10 @@
 //express part 
 const express = require('express');
+const path = require('path');
 const app = express();
 app.use(require('body-parser').urlencoded({extended:true}))
+app.use('/static', express.static(path.join(__dirname, 'coronatracker/images')))
+
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/coronatracker/index.html');
     // res.sendFile(__dirname + '/coronatracker/style.css');
