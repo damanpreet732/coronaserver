@@ -2,6 +2,9 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+
+var port = process.env.PORT || 1234 
+
 app.use(require('body-parser').urlencoded({extended:true}))
 app.use('/static', express.static(path.join(__dirname, 'coronatracker/images')))
 
@@ -22,7 +25,7 @@ app.get('/feedbacks',(req,res)=>{
     res.sendFile(__dirname+"/coronatracker/feedbacks.html");
 })
 
-app.listen(1234,(err)=>{
+app.listen(port,(err)=>{
     if(err) throw err ;
     console.log("Server Started")
 });
