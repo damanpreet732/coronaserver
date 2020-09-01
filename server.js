@@ -6,7 +6,7 @@ const app = express();
 var port = process.env.PORT || 1234 
 
 app.use(require('body-parser').urlencoded({extended:true}))
-app.use('/static', express.static(path.join(__dirname, 'coronatracker/images')))
+app.use('/static', express.static(path.join(__dirname, 'coronatracker')))
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/coronatracker/index.html');
@@ -71,7 +71,7 @@ app.post('/' , (req,res)=>{
         "${docontact}"
     );`
     connection.query(sql,(err,rows)=>{
-        if(err) console.log(err) ;
+        if(err) throw err ;
         else console.log("Row Inserted");
     })
     res.sendFile(__dirname + '/coronatracker/index2.html');
