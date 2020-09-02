@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+            }
+    </style>
 </head>
 <body>
 	<nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top border ">
@@ -16,27 +26,27 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="/"><img src="/static/images/icon.png"style="height:50px ;width:50px ;" ></a>
+            <a class="navbar-brand mr-auto" href="/"><img src="/static/images/icon.png"style="height:50px ;width:50px ;animation:rotation 2s infinite linear ;" ></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active"><a class="nav-link" href="/"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="covid-19"><span class="fa fa-info fa-lg"></span> What is covid-19 </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Prevention </a></li>
+                        <li class="nav-item "><a class="nav-link" href="/"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="covid-19"><span class="fa fa-info fa-lg"></span> What is covid-19 </a></li>
+                        <li class="nav-item"><a class="nav-link" href="prevention"><span class="fa fa-list fa-lg"></span> Prevention </a></li>
                         <li class="nav-item"><a class="nav-link" href="aboutus"><span class="fa fa-cog fa-spin fa-lg"></span> About </a></li>
                         <li class="nav-item"><a class="nav-link" href="feedbacks"><span class="fa fa-database  fa-lg"></span> Feedbacks </a></li>
                 </ul>
             </div>
         </div>
     </nav>
-	<div class="jumbotron text-center text-warning bg-dark my-5"><h1>What Is Covid-19</h1></div>
-	<div class="text-center text-warning bg-dark"><p>
-	Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.</p>
-	<p>Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary camels to humans. Several known coronaviruses are circulating in animals that have not yet infected humans.</p>
-	<p>
-	Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+    <div class="jumbotron text-center text-warning bg-dark my-5"><h1>What Is Covid-19</h1></div>
+    <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgYTjovXrqPqVNuixYGI2cDQGVu2me60M3Gg&usqp=CAU" alt="what is covid-19?" height=250px width=250px class="float-right pull-left mr-2">
+	<div float="left" class="text-center text-warning bg-dark"><p>
+	Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
+	Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary camels to humans. Several known coronaviruses are circulating in animals that have not yet infected humans.
+	Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.<br>
 	The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes,
-Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone showing symptoms of respiratory illness such as coughing and sneezing.</p>
-	<p>
-	At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments</p></div>
+    Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone showing symptoms of respiratory illness such as coughing and sneezing.<br>At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments</p></div>
+</div>
 </body>
 </html>

@@ -5,78 +5,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+        }
+    </style>
 </head>
 <html>
 <body class="bg-dark text-warning">
-<!-- <img src="https://image.shutterstock.com/z/stock-vector-coronavirus-covid-prevention-sticker-set-hand-drawn-pack-with-lettering-how-to-protect-yourself-1683664093.jpg" width=888px height=400> -->
-<h1 align="center">How to Protect Yourself & Others</h1>
-<h2>Know how it spreads</h2>
-<ul type="disc">
-<li>There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li><br/>
-<li><strong>The best way to prevent illness is to avoid being exposed to this virus.</strong></li><br/>
-<li>The virus is thought to spread mainly from person to person.</li><br/>
-<ul typr="circle">
-<li>Between people who are in close contact with one another (within about 6 feet).</li><br/>
-<li>Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li><br/>
-<li>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li><br/>
-<li>Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
-</ul>
-</ul>
-<h2>Everyone Should</h2>
-<ul type="disc">
-<li><strong>Wash your hands often</strong> with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li><br/>
-<li>It’s especially important to wash:</li>
-<ul type="circle">
-<li>Before eating or preparing food.</li><br/>
-<li>Before touching your face</li><br/>
-<li>After using the restroom</li><br/>
-<li>After leaving a public place</li><br/>
-<li>After blowing your nose, coughing, or sneezing</li><br/>
-<li>After handling your mask</li><br/>
-<li>After changing a diaper</li><br/>
-<li>After caring for someone sick</li><br/>
-<li>After touching animals or pets</li><br/>
-</ul>
-<li>If soap and water are not readily available, <strong>use a hand sanitizer that contains at least 60% alcohol.</strong> Cover all surfaces of your hands and rub them together until they feel dry.</li>
-</ul>
-<h2>Avoid close contact</h2>
-<ul type="disc">
-<li><strong>Inside your home:</strong> Avoid close contact with people who are sick.</li><br/>
-<ul type="circle">
-<li>If possible, maintain 6 feet between the person who is sick and other household members.</li><br/>
-</ul>
-<li><strong>Outside your home:</strong> Put 6 feet of distance between yourself and people who don’t live in your household.</li><br/>
-<ul type="circle">
-<li>Remember that some people without symptoms may be able to spread virus.</li><br/>
-<li>Stay at least 6 feet (about 2 arms’ length) from other people.</li><br/>
-<li>Keeping distance from others is especially important for people who are at higher risk of getting very sick.</li>
-</ul>
-</ul>
-<h2>Cover your mouth and nose with a mask when around others</h2>
-<ul type="disc">
-<li>You could spread COVID-19 to others even if you do not feel sick.</li><br/>
-<li>The mask is meant to protect other people in case you are infected.</li><br/>
-<li>Everyone should wear a mask in public settings and when around people who don’t live in your household, especially when other social distancing measures are difficult to maintain.</li><br/>
-<ul type="circle">
-<li>Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li><br/>
-</ul>
-<li>Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li><br/>
-<li>Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
-</ul>
-<h2>Cover coughs and sneezes</h2>
-<ul type="disc">
-<li><strong>Always cover your mouth and nose</strong> with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li><br/>
-<li><strong>Throw used tissues</strong> in the trash.</li><br/>
-<li>Immediately <strong>wash your hands</strong> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
-</ul>
-<h2>Monitor Your Health Daily</h2>
-<ul type="disc">
-<li><strong>Be alert for symptoms.</strong> Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.</li><br/>
-<ul type="circle">
-<li>Especially important if you are running essential errands, going into the office or workplace, and in settings where it may be difficult to keep a physical distance of 6 feet.</li><br/>
-</ul>
-<li><strong>Take your temperature</strong> if symptoms develop.</li><br/>
-<li>Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
-</ul>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top border ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="/"><img src="/static/images/icon.png"style="height:50px ;width:50px ;animation:rotation 2s infinite linear ;" ></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item"><a class="nav-link" href="/"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="covid-19"><span class="fa fa-info fa-lg"></span> What is covid-19 </a></li>
+                        <li class="nav-item active"><a class="nav-link" href="prevention"><span class="fa fa-list fa-lg"></span> Prevention </a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus"><span class="fa fa-cog fa-spin fa-lg"></span> About </a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedbacks"><span class="fa fa-database  fa-lg"></span> Feedbacks </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <h1 align="center">How to Protect Yourself & Others</h1>
+    <h2>Know how it spreads</h2>
+    <ul type="disc">
+    <li><img src="data:image/png;base64,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" heigt=30px width=40px>There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li><br/>
+    <li><strong>The best way to prevent illness is to avoid being exposed to this virus.</strong></li><br/>
+    <li>The virus is thought to spread mainly from person to person.</li><br/>
+    <ul typr="circle">
+    <li>Between people who are in close contact with one another (within about 6 feet).</li><br/>
+    <li>Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li><br/>
+    <li>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li><br/>
+    <li>Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
+    </ul>
+    </ul>
+    <h2>Everyone Should</h2>
+    <ul type="disc">
+    <li><img src="https://media.istockphoto.com/vectors/hand-wash-icon-vector-id1217290879" height=30px width=40px><strong> Wash your hands often</strong> with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li><br/>
+    <li>It’s especially important to wash:</li>
+    <ul type="circle">
+    <li>Before eating or preparing food.</li><br/>
+    <li>Before touching your face</li><br/>
+    <li>After using the restroom</li><br/>
+    <li>After leaving a public place</li><br/>
+    <li>After blowing your nose, coughing, or sneezing</li><br/>
+    <li>After handling your mask</li><br/>
+    <li>After changing a diaper</li><br/>
+    <li>After caring for someone sick</li><br/>
+    <li>After touching animals or pets</li><br/>
+    </ul>
+    <li>If soap and water are not readily available, <strong>use a hand sanitizer that contains at least 60% alcohol.</strong> Cover all surfaces of your hands and rub them together until they feel dry.</li>
+    </ul>
+    <h2>Avoid close contact</h2>
+    <ul type="disc">
+    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkbDCpZ4flrjMXgNsLJvqN7xji6jzByIE64Q&usqp=CAU" height=30px width=40px><strong> Inside your home:</strong> Avoid close contact with people who are sick.</li><br/>
+    <ul type="circle">
+    <li>If possible, maintain 6 feet between the person who is sick and other household members.</li><br/>
+    </ul>
+    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLPz-LoI_p2GpfzwmcXhTM1ihyLkMQ0NkB1g&usqp=CAU" height=30px width=40px><strong> Outside your home:</strong> Put 6 feet of distance between yourself and people who don’t live in your household.</li><br/>
+    <ul type="circle">
+    <li>Remember that some people without symptoms may be able to spread virus.</li><br/>
+    <li>Stay at least 6 feet (about 2 arms’ length) from other people.</li><br/>
+    <li>Keeping distance from others is especially important for people who are at higher risk of getting very sick.</li>
+    </ul>
+    </ul>
+    <h2>Cover your mouth and nose with a mask when around others</h2>
+    <ul type="disc">
+    <li><img src="https://static1.bigstockphoto.com/9/4/3/large2/349965496.jpg" height=30px width=40px>You could spread COVID-19 to others even if you do not feel sick.</li><br/>
+    <li>The mask is meant to protect other people in case you are infected.</li><br/>
+    <li>Everyone should wear a mask in public settings and when around people who don’t live in your household, especially when other social distancing measures are difficult to maintain.</li><br/>
+    <ul type="circle">
+    <li>Masks should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li><br/>
+    </ul>
+    <li>Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li><br/>
+    <li>Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
+    </ul>
+    <h2>Cover coughs and sneezes</h2>
+    <ul type="disc">
+    <li><img src="https://media.istockphoto.com/vectors/personal-hygiene-covering-mouth-with-tissue-while-sneezing-icon-as-vector-id1215363048?k=6&m=1215363048&s=170667a&w=0&h=fEkSXsPJT3Z17LBUlQPVHbQhK_bnjNvBZnVfqCdowcQ=" height=30px width=40px><strong>Always cover your mouth and nose</strong> with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li><br/>
+    <li><strong>Throw used tissues</strong> in the trash.</li><br/>
+    <li>Immediately <strong>wash your hands</strong> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+    </ul>
+    <h2>Monitor Your Health Daily</h2>
+    <ul type="disc">
+    <li><img src="data:image/png;base64,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" height=30px width=40px><strong>Be alert for symptoms.</strong> Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.</li><br/>
+    <ul type="circle">
+    <li>Especially important if you are running essential errands, going into the office or workplace, and in settings where it may be difficult to keep a physical distance of 6 feet.</li><br/>
+    </ul>
+    <li><strong>Take your temperature</strong> if symptoms develop.</li><br/>
+    <li>Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
+    </ul>
 </body>
 </html>

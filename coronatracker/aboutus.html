@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+    </style>
 </head>
 <body class=" bg-dark">
     <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top border ">
@@ -16,34 +27,38 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="/"><img src="/static/images/icon.png"style="height:50px ;width:50px ;" ></a>
+            <a class="navbar-brand mr-auto" href="/"><img src="/static/images/icon.png"style="height:50px ;width:50px ;animation:rotation 2s infinite linear ;" ></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active"><a class="nav-link" href="/"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="covid-19"><span class="fa fa-info fa-lg"></span> What is covid-19 </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Prevention </a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus"><span class="fa fa-cog fa-spin fa-lg"></span> About </a></li>
+                        <li class="nav-item"><a class="nav-link" href="prevention"><span class="fa fa-list fa-lg"></span> Prevention </a></li>
+                        <li class="nav-item active"><a class="nav-link" href="aboutus"><span class="fa fa-cog fa-spin fa-lg"></span> About </a></li>
                         <li class="nav-item"><a class="nav-link" href="feedbacks"><span class="fa fa-database  fa-lg"></span> Feedbacks </a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <br><br><br><br><br>
     <div class="container ">
         <h1 class="text-left text-warning"><b>About US</b></h1>
-        <p class= "text-warning">
+        <p class="text-warning">World Corona Tracker act as a portal to keep track of the latest news development about the COVID-19, alongside collecting data for further analysis. All the contents are handpicked, filtered, to ensure that sources are reliable with minimal hoaxes and fake news, in the best bnefit of the public.</p>
+        <p class= "text-warning"><i>
         This project is made up as college project not for any productional or business use. We students have put on a lot of efforts to built this project.
-        Please spare some time to leave on your valuable feedback.</p>
+        Please spare some time to leave on your valuable feedback.</i></p>
         <h1 class="text-warning"><b>Behind World Corona Tracker</b></h1>
         <ul class="text-warning">
-        <li>Damanpreet Singh</li>
-        <a href="http://linkedin.com/in/damanpreet-singh-02ba55183">(LinkedIn)</a>
-        <li>Bhawna</li>
-        <a href="https://www.linkedin.com/in/bhawna-6860b7193">(LinkedIn)</a>
-        <li>Geetika Sharma</li>
-        <a href="https://www.linkedin.com/in/geetika-sharma-9b9aa0193">(LinkedIn)</a>
-        <li>Dhriti Jain</li>
-        <a href="https://www.linkedin.com/in/dhriti-jain-b59b29192">(LinkedIn)</a>
+        <li>
+        <a href="http://linkedin.com/in/damanpreet-singh-02ba55183"><img src="https://image.flaticon.com/icons/svg/174/174857.svg" height=30px width=40px></a>Damanpreet Singh</li><br>
+        <li>
+        <a href="https://www.linkedin.com/in/bhawna-6860b7193"><img src="https://image.flaticon.com/icons/svg/174/174857.svg" height=30px width=40px></a>Bhawna</li><br>
+        <li>
+        <a href="https://www.linkedin.com/in/geetika-sharma-9b9aa0193"><img src="https://image.flaticon.com/icons/svg/174/174857.svg" height=30px width=40px></a>Geetika Sharma</li><br>
+        <li>
+        <a href="https://www.linkedin.com/in/dhriti-jain-b59b29192"><img src="https://image.flaticon.com/icons/svg/174/174857.svg" height=30px width=40px></a>Dhriti Jain</li><br>
         </ul>
+
+        <p class="text-warning text-right"><i>-We aim to use technology and make information more accessible.</i></p>
     </div>
 
 </body>

@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-var port = process.env.PORT || 1234 
+// var port = process.env.PORT || 1234 
 
 app.use(require('body-parser').urlencoded({extended:true}))
 app.use('/static', express.static(path.join(__dirname, 'coronatracker')))
@@ -33,7 +33,11 @@ app.get('/aboutus',(req,res)=>{
     res.sendFile(__dirname+"/coronatracker/aboutus.html");
 })
 
-app.listen(port,(err)=>{
+app.get('/prevention',(req,res)=>{
+    res.sendFile(__dirname+"/coronatracker/prevention.html");
+})
+
+app.listen(1234,(err)=>{
     if(err) throw err ;
     console.log("Server Started")
 });
