@@ -20,7 +20,7 @@
         var app = angular.module("myApp",[])
         app.controller("myCtrl",function($scope,$http){
             $http.get("https://api.covid19api.com/summary")
-            .then(function(response){
+            .then((response)=>{
                 $scope.global = response.data.Global 
                 $scope.country = response.data.Countries 
                 $scope.orderByMe = function(x) {

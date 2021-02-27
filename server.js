@@ -6,6 +6,7 @@ const app = express();
 // var port = process.env.PORT || 1234 
 
 app.use(require('body-parser').urlencoded({extended:true}))
+
 app.use('/static', express.static(path.join(__dirname, 'coronatracker')))
 
 app.get('/',(req,res)=>{
